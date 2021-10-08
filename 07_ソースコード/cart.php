@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<input type="button" onclick="location.href='toppage-log.php'" value="文房具サイト">
+<input type="button" onclick="location.href='login-toppage.php'" value="文房具サイト">
 
 <input type="button" onclick="location.href='cart.php'" value="カートの中">
 
