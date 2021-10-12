@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>注文</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <input type="button" onclick="location.href='login-toppage.php'" value="文房具サイト">
