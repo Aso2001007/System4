@@ -6,41 +6,47 @@
 
 # データベース詳細
 
-### 購入テーブル（d_purchase）
+### 商品テーブル（commodity）
 |和名|属性名(d_purchase)|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|オーダーID|order_id|bigint(20)|○|○||
-|顧客コード|customer_code|varchar(50)||○||
-|購入日|purchase_date|date||○||
-|総額|total_price|int(18)||○||
+||id|int(10)|○|○||
+||money|int(10)||○||
+||commodity_name|varchar(20)||○||
+||regstration_date|date||○||
+||category_id|varchar(10)||○||
 
-### 購入詳細テーブル（d_puchase_detail）
+### 会員情報テーブル（member）
 |和名|属性名(d_purchase_detail)|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|オーダー詳細ID|detail_id|bigint(20)|○|○||
-|オーダーID|order_id|bigint(20)|○|○|○|
-|商品コード|item_code|int(11)||○||
-|価格|price|int(11)||○||
-|数量|num|int(11)||○||
+||detail_id|bigint(20)|○|○||
+||order_id|bigint(20)|○|○|○|
+||item_code|int(11)||○||
+||price|int(11)||○||
+||num|int(11)||○||
 
-### 顧客マスタ（m_customers）
+### 購入テーブル（order_table）
 |和名|属性名(m_customers)|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|顧客コード|customer_code|varchar(50)|○|○||
-|パスワード|pass|varchar(50)||○|○|
-|氏名|name|varchar(20)||○||
-|住所|address|varchar(100)||○||
-|電話番号|tel|int(20)||○||
-|メールアドレス|mail|carchar(100)||○||
-|削除フラグ|del_flag|int(11)||||
-|登録日|reg_date|date||○||
+||customer_code|varchar(50)|○|○||
+||pass|varchar(50)||○|○|
+||name|varchar(20)||○||
+||address|varchar(100)||○||
+||tel|int(20)||○||
+||mail|carchar(100)||○||
+||del_flag|int(11)||||
+||reg_date|date||○||
+
+
+
+
+
 
 ### カテゴリマスタ(m_category)
 |和名|属性名(m_category)|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|カテゴリID|category_id|int(11)|○|○||
-|氏名|name|varchar(20)||○||
-|登録日|reg_date|date||○||
+||category_id|int(11)|○|○||
+||name|varchar(20)||○||
+||reg_date|date||○||
 
 ### 商品マスタ(m_item)
 |和名|属性名(m_item)|型|PK|NN|FK|
