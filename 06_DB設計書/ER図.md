@@ -13,7 +13,7 @@ skinparam class {
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 package "文房具サイト" as target_system {
-  entity 会員情報　as member <m_member> <<M,MASTER_MARK_COLOR>> {
+  entity "会員情報"　as member <m_member> <<M,MASTER_MARK_COLOR>> {
     + e-mail [PK]
     --
     name
