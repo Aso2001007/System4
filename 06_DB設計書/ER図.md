@@ -30,7 +30,7 @@ package "文房具サイト" as target_system {
     address
   }
   
-  entity "商品詳細"　 as commodity <m_commodity> <M,MASTER_MARK_COLOR>> {
+  entity "商品詳細" as commodity <m_commodity> <M,MASTER_MARK_COLOR>> {
     + ID [PK]
     --
     money
