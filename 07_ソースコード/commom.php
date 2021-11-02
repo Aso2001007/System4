@@ -9,9 +9,9 @@
 <div class="head">
     <a href="toppage-log.php" id="vanner">文房具サイト</a>
     <button type="submit"  href="" id="cart">カートの中　　🛒</button><br>
-    <button type="submit" id="infor-regster" href="">会員情報</button>
-    <button type="submit" id="log" href="">ログアウト</button>
-    <input type="text" id="keyword" name="keyword" value="キーワードで検索">
+    <button type="submit" id="infor-regster" href="">会員情報or会員登録</button>
+    <button type="submit" id="log" href="">ログアウトorログイン</button>
+    <input type="text" id="keyword" name="keyword" value="キーワードで検索 　　 🔍 ">
 </div>
 
 
