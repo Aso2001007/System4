@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .head {
     position: absolute;
     width: 100%;
@@ -27,24 +31,32 @@ body {
     font-weight: normal;
     line-height: 28px;
 
-}
-
-.main {
-
-}
-
-.information{
-    position: absolute;
-    width: 860px;
-    height: 550px;
-    left: 333px;
-    top: 282px;
-    background-color: #fafafa;
+    border-right-style: solid;
+    border-width: 1px;
 }
 
 .pagename {
     float: right;
 }
+
+#user-name {
+    position: absolute;
+    width: 144px;
+    height: 28px;
+    left: 915px;
+    top: 48px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+
+}
+
 
 #title {
     position: absolute;
@@ -125,7 +137,7 @@ body {
 
 #keyword {
     position: absolute;
-    width: 381px;
+    width: 330px;
     height: 40px;
     left: 1100px;
     top: 92px;
@@ -134,6 +146,24 @@ body {
     border: 1px solid #C6C6C6;
     box-sizing: border-box;
     border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #797979;
+}
+
+#keyword-button {
+    position: absolute;
+    height: 40px;
+    left: 1430px;
+    top: 92px;
+
+    background: #E6E6E6;
+    border: 1px solid #C6C6C6;
 
     font-family: Roboto;
     font-style: normal;
@@ -154,7 +184,7 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
@@ -185,4 +215,54 @@ body {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+}
+
+.main {
+
+}
+
+.information{
+    position: absolute;
+    width: 860px;
+    height: 555px;
+    left: 333px;
+    top: 282px;
+
+    background: #FFFFFF;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #2D2D2D;
+}
+
+.edit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #000000;
+
+    background: #DCDCDC;
+    border-radius: 10px;
+}
+
+.edittext {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.editbox {
+
+    height: 137px;
+
+    border: 1px solid #ABABAB;
 }
