@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <title>会員登録</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reg.css">
 </head>
 <body>
 
 <div class="head">
-    <a href="toppage-log.php" id="vanner">文房具サイト</a>
+    <a href="login-toppage.php" id="vanner">文房具サイト</a>
     <input type="text" id="keyword" name="keyword" placeholder="キーワードで検索">
     <button type="submit" id="keyword-button">🔍</button>
 </div>
@@ -30,7 +31,7 @@
     <form action="register.info.php" method="post">
 
         <p class="reg-name">お名前：<br>
-            <input type="text" class="register-name" size="100" maxlength="500" placeholder="お名前を入力してください">
+            <input type="text" class="register-name"  placeholder="お名前を入力してください">
         <p class="reg-tel">電話番号：<br>
             <input type="text" class="register-tel" placeholder="電話番号を入力してください">
         </p>
@@ -40,9 +41,8 @@
         <p class="reg-pass">パスワード：<br>
             <input type="text" class="register-pass" placeholder="パスワードを入力してください">
         </p>
-    </div>
-<div class="register-submit">
-        <p><input type="submit" value="完了"></p>
+
+        <p><input type="submit" class="register-submit" value="完了"></p>
     </form>
 </div>
 
