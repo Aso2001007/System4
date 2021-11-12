@@ -1,0 +1,134 @@
+
+.register{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: 250px;
+    top: 150px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #5E5E5E;
+
+}
+.register-main{
+    position: absolute;
+    width: 860px;
+    height: 488px;
+    left: 333px;
+    top: 233px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+.reg-name{
+    position: absolute;
+    top: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #2D2D2D;
+
+}
+.reg-email{
+    position: absolute;
+    top: 100px;
+
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+.reg-tel{
+    position: absolute;
+    top: 190px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+.reg-pass{
+    position: absolute;
+    top: 280px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+.register-name{
+    position: absolute;
+    width: 816px;
+    height: 36px;
+    left: 10px;
+
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.register-email{
+    position: absolute;
+    width: 816px;
+    height: 36px;
+    left: 10px;
+
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.register-pass{
+    /* 入力欄 */
+
+
+    position: absolute;
+    width: 816px;
+    height: 36px;
+    left: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.register-tel{
+    /* 入力欄 */
+
+
+    position: absolute;
+    width: 816px;
+    height: 36px;
+    left: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
+
+.register-submit{
+    position: absolute;
+    width: 94px;
+    height: 56px;
+    left: 150px;
+    top: 500px;
+
+}
