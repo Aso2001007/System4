@@ -19,7 +19,8 @@
 ### 会員情報テーブル（member）
 |和名|属性名(d_purchase_detail)|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-||e_mail|varcahr(50)|○|○||
+||m_id|int(10)|○|○||
+||e_mail|varcahr(50)||○||
 ||name|varcahr(20)||○||
 ||phone|int(11)||○||
 ||pass|varchar(30)||○||
