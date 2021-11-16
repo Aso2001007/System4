@@ -9,7 +9,6 @@
 
 <div class="head">
     <a href="toppage.php" id="vanner">文房具サイト</a>
-    <button type="submit"  href="cart.php" id="cart">カートの中　　🛒</button><br>
     <button type="submit" id="infor-regster" href="register.php">会員登録</button>
     <button type="submit" id="log" href="login.php">ログイン</button>
     <input type="text" id="keyword" name="keyword" value="キーワードで検索 　　 🔍 ">
