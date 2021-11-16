@@ -14,6 +14,7 @@
 ||commodity_name|varchar(20)||○||
 ||regstration_date|date||○||
 ||category_id|varchar(10)||○||
+||color|int(2)||○||
 ||explanatory_text|varchar(1000)||||
 
 ### 会員情報テーブル（member）
