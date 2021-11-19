@@ -2,16 +2,18 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>login-toppage</title>
+    <title>toppage</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
 <div class="head">
     <a href="toppage.php" id="vanner">文房具サイト</a>
-    <button type="submit" id="infor-regster" href="register.php">会員登録</button>
-    <button type="submit" id="log" href="login.php">ログイン</button>
-    <input type="text" id="keyword" name="keyword" value="キーワードで検索 　　 🔍 ">
+    <button type="submit"  onclick=location.href="./cart.php" id="cart">カートの中　　🛒</button><br>
+    <button type="submit" id="infor-regster" onclick=location.href="./register.php">会員登録</button>
+    <button type="submit" id="log" onclick=location.href="./login.php">ログイン</button>
+    <input type="search" id="keyword" name="keyword" placeholder="キーワードで検索">
+    <button type="submit" id="keyword-button">🔍</button>
 </div>
 
 <dl class="category">
