@@ -39,7 +39,7 @@ package "文房具サイト" as target_system {
     text
   }
   
-  entity "購入詳細" as purchase_details <purchase_details> <<M,MASTER_MARK_COLOR>> {
+  entity "購入詳細" as purchase_details <purchase_details> <<T,TRANSACTION_MARK_COLOR>> {
     + purchase_id [PK] [FK]
     + item_id [PK] [Fk]
     --
