@@ -6,31 +6,50 @@
 
 # データベース詳細
 
-### 商品テーブル（commodity）
-|和名|属性名(d_purchase)|型|PK|NN|FK|
+### 商品テーブル（item）
+|和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|商品ID|id|int(10)|○|○||
-|値段|money|int(10)||○||
-|商品名|commodity_name|varchar(20)||○||
-|登録日|regstration_date|date||○||
-|カテゴリID|category_id|varchar(10)||○||
-|色|color|int(2)||○||
-|説明文|explanatory_text|varchar(1000)||||
+|商品ID|item_id|int(10)|○|○||
+|値段|price|int(10)||○||
+|商品名|item_name|varchar(50)||○||
+|カテゴリID|category_id|varchar(10)||○|○|
+|説明文|text|varchar(1000)||||
 
 ### 会員情報テーブル（member）
-|和名|属性名(d_purchase_detail)|型|PK|NN|FK|
+|和名|属性名|型|PK|NN|FK|
 |:---|:---|:---|:---|:---:|:----:|
-|会員ID|m_id|int(10)|○|○||
-|メール|e_mail|varcahr(50)||○||
+|会員ID|user_id|int(10)|○|○||
+|メール|mail|varcahr(50)||○||
 |名前|name|varcahr(20)||○||
-|電話番号|phone|int(11)||○||
-|パスワード|pass|varchar(30)||○||
-|登録日|registration_date|date||○||
-
-### 購入テーブル（order_table）
-|和名|属性名(m_customers)|型|PK|NN|FK|
-|:---|:---|:---|:---|:---:|:----:|
-|注文ID|order_id|int(10)|○|○||
-|名前|name|varchar(50)||○||
 |電話番号|tel|int(11)||○||
-|住所|address|varchar(100)||○||
+|パスワード|pass|varchar(10)||○||
+|住所|addles|varchar(100)||○||
+
+### 購入テーブル（purchase）
+|和名|属性名|型|PK|NN|FK|
+|:---|:---|:---|:---|:---:|:----:|
+|購入ID|purchase_id|int(10)|○|○||
+|会員ID|user_id|int(10)||○|○|
+|購入日|date|datetime||○||
+
+### 購入詳細テーブル（purchase_details）
+|和名|属性名|型|PK|NN|FK|
+|:---|:---|:---|:---|:---:|:----:|
+|詳細ID|details_id|int(10)||○||
+|購入ID|purchase_id|int(10)|○|○|○|
+|会員ID|item_ID|int(10)|○|○|○|
+|個数|quantity|int(10)||○||
+
+### カテゴリテーブル（category）
+|和名|属性名|型|PK|NN|FK|
+|:---|:---|:---|:---|:---:|:----:|
+|カテゴリID|categoru_id|int(10)|○|○||
+|カテゴリ名|category_name|varchar(20)||○||
+
+### カラーテーブル(color)
+|和名|属性名|型|PK|NN|FK|
+|:---|:---|:---|:---|:---:|:----:|
+|商品ID|item_id|int(10)|○|○|○|
+|カラーID|color_id|int(10)|○|○||
+|カラー名|color_name|varchar(10)||○||
+|画像|image_content|mediumblob||○||
