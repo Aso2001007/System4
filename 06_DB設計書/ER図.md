@@ -23,14 +23,14 @@ package "文房具サイト" as target_system {
     pass
   }
   
-  entity "購入テーブル" as purchase <purchase> <<T,TRANSACTION_MARK_COLOR>> {
+  entity "購入" as purchase <purchase> <<T,TRANSACTION_MARK_COLOR>> {
     + purchase_id [PK]
     + user_id [PK][FK]
     --
     date
   }
   
-  entity "商品詳細" as item <item> <<M,MASTER_MARK_COLOR>> {
+  entity "商品" as item <item> <<M,MASTER_MARK_COLOR>> {
     + item_id [PK]
     --
     item_name
@@ -39,10 +39,28 @@ package "文房具サイト" as target_system {
     text
   }
   
-  entity ""
-}
-member |o-ri-o{ order_table
-order_table }-do-|| commodity
+  entity "購入詳細" as purchase_details <purchase_details> <<M,MASTER_MARK_COLOR>> {
+    + purchase_id [PK] [FK]
+    + item_id [PK] [Fk]
+    --
+    details_id
+    quantity
+  }
+  
+  entity "カテゴリ" as category <category> <<M,MASTER_MARK_COLOR>> {
+    + category_id [PK]
+    --
+    category_name
+  }
+  
+  entity "カラー" as color <<color>> <<M,MASTER_MARK_COLOR>> {
+    + item_id [PK] [FK]
+    + color_id [PK] [FK]
+    --
+    color_name
+    image_content
+  }
+ }
 
 @enduml
 ```
