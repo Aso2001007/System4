@@ -61,6 +61,12 @@ package "文房具サイト" as target_system {
     image_content
   }
  }
+ 
+item ||--|| category
+item ||--|| color
+purchase ||--|| purchase_details
+purchase ||--|| member
+purchase_details ||--|| item 
 
 @enduml
 ```
