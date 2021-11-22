@@ -1,6 +1,6 @@
 # DB定義書
  ## ER図
- [ER図はこちら]( "ER図はこちら" )
+ [ER図はこちら]( https://github.com/Aso2001007/System4/blob/main/06_DB/ER%E5%9B%B3.md "ER図はこちら" )
 
  # DBテーブルカラム詳細一覧
 
