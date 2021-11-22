@@ -53,7 +53,7 @@ package "文房具サイト" as target_system {
     category_name
   }
   
-  entity "カラー" as color <<color>> <<M,MASTER_MARK_COLOR>> {
+  entity "カラー" as color <color> <<M,MASTER_MARK_COLOR>> {
     + item_id [PK] [FK]
     + color_id [PK]
     --
