@@ -13,32 +13,33 @@ skinparam class {
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
 package "文房具サイト" as target_system {
-  entity "会員情報" as member <m_member> <<M,MASTER_MARK_COLOR>> {
-    + e-mail [PK]
+  entity "会員情報" as member <member> <<M,MASTER_MARK_COLOR>> {
+    + user_id [PK]
     --
     name
-    phone
-    pass
-    registration_date
-  }
-  
-  entity "購入テーブル" as order_table <order_table> <<T,TRANSACTION_MARK_COLOR>> {
-    + order_id [PK]
-    --
-    name
+    addles
     tel
-    address
+    mail
+    pass
   }
   
-  entity "商品詳細" as commodity <m_commodity> <<M,MASTER_MARK_COLOR>> {
-    + ID [PK]
+  entity "購入テーブル" as purchase <purchase> <<T,TRANSACTION_MARK_COLOR>> {
+    + purchase_id [PK]
+    + user_id [PK][FK]
     --
-    money
-    commodity_name
-    registration_date
-    category_id
-    explanatory_text
+    date
   }
+  
+  entity "商品詳細" as item <item> <<M,MASTER_MARK_COLOR>> {
+    + item_id [PK]
+    --
+    item_name
+    price
+    category_id [FK]
+    text
+  }
+  
+  entity ""
 }
 member |o-ri-o{ order_table
 order_table }-do-|| commodity
