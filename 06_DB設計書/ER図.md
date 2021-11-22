@@ -62,11 +62,11 @@ package "文房具サイト" as target_system {
   }
  }
  
-item ||--|| category
-item ||--|| color
-purchase ||--|| purchase_details
+item }|--|| category
+item }|--|| color
+purchase ||--|{purchase_details
 purchase ||--|| member
-purchase_details ||--|| item 
+purchase_details }|--|{ item 
 
 @enduml
 ```
