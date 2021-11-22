@@ -55,7 +55,7 @@ package "文房具サイト" as target_system {
   
   entity "カラー" as color <<color>> <<M,MASTER_MARK_COLOR>> {
     + item_id [PK] [FK]
-    + color_id [PK] [FK]
+    + color_id [PK]
     --
     color_name
     image_content
