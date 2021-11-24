@@ -1,3 +1,4 @@
+<?php sessison_start()?>
 <?php require 'header.php'?>
 <!--sessionで会員情報を取得-->
 <?php
