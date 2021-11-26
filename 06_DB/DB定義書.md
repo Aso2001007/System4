@@ -37,7 +37,7 @@
  |:---|:---|:---|:---|:---:|:----:|
  |詳細ID|details_id|int(10)||○||
  |購入ID|purchase_id|int(10)|○|○|○|
- |会員ID|item_ID|int(10)|○|○|○|
+ |商品ID|item_ID|int(10)|○|○|○|
  |個数|quantity|int(10)||○||
 
  ### カテゴリテーブル（category）
