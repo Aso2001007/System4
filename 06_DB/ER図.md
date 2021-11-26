@@ -17,7 +17,7 @@
      + user_id [PK]
      --
      name
-     addles
+     address
      tel
      mail
      pass
