@@ -13,6 +13,7 @@
  |値段|price|int(10)||○||
  |商品名|item_name|varchar(50)||○||
  |カテゴリID|category_id|varchar(10)||○|○|
+ |登録日|date|date||○||
  |説明文|text|varchar(1000)||||
 
  ### 会員情報テーブル（member）
