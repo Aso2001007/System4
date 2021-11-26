@@ -24,7 +24,7 @@
  |名前|name|varcahr(20)||○||
  |電話番号|tel|int(11)||○||
  |パスワード|pass|varchar(10)||○||
- |住所|addles|varchar(100)||○||
+ |住所|address|varchar(100)||○||
 
  ### 購入テーブル（purchase）
  |和名|属性名|型|PK|NN|FK|
