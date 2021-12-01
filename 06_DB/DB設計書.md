@@ -1,6 +1,6 @@
 <img src="./img/item2.png" width="500">
  -----------
- <img src="./img/member2.png" width="500">
+ <img src="./img/member3.png" width="500">
  -----------
  <img src="./img/purchase.png" width="500">
  -----------
