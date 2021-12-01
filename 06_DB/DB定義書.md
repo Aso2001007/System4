@@ -23,7 +23,7 @@
  |メール|mail|varcahr(50)||○||
  |名前|name|varcahr(20)||○||
  |電話番号|tel|int(11)||○||
- |パスワード|pass|varchar(10)||○||
+ |パスワード|pass|varchar(24)||○||
  |住所|address|varchar(100)||○||
 
  ### 購入テーブル（purchase）
