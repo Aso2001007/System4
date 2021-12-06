@@ -48,9 +48,11 @@ $sql->execute();
 $flg = true;
 foreach ($sql as $row){
     $item_id=$row['item_id'];
+    echo '<div class="item">';
     //echo '<a href=""></a>';//商品画像
     echo '<a href="item.php?id=', $item_id, '">', $row['item_name'], '</a>';
     echo $row['price'];
+    echo '</div>';
     $flg=false;
 }
 if ($flg) {
