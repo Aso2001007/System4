@@ -47,9 +47,9 @@ if (isset($_GET['keyword']) && !isset($_GET['id'])) {
 }
 $sql->execute();
 $flg = true;
-//echo '<a href=""></a>';//商品画像
 foreach ($sql as $row){
     $item_id=$row['item_id'];
+    //echo '<a href=""></a>';//商品画像
     echo '<a href="item.php?id=', $item_id, '">', $row['item_name'], '</a>';
     echo $row['price'];
     $flg=false;
