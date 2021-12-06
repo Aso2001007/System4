@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
+<form action="list.php" method="get">
 <div class="head">
     <a href="toppage.php" id="vanner">文房具サイト</a>
     <button type="submit"  onclick=location.href="./cart.php" id="cart">カートの中　　🛒</button><br>
@@ -17,37 +17,39 @@
 </div>
 
 <dl class="category">
-    <dt>カテゴリーで探す</dt>
-    <dt><hr width="210"></dt>
-    <dt><a href="">鉛筆、ペン</a></dt>
-    <dt><hr width="210"></dt>
-    <dt><a href="">消しゴム</a></dt>
-    <dt><hr width="210"></dt>
-</dl>
+        <dt>カテゴリーで探す</dt>
+        <dt><hr width="210"></dt>
+        <dt><a href="list.php?id=1">鉛筆、ペン</a></dt>
+        <dt><hr width="210"></dt>
+        <dt><a href="list.php?id=2">消しゴム</a></dt>
+        <dt><hr width="210"></dt>
+    </dl>
+</form>
 <?php
-$pdo = new PDO('mysql:host=mysql153.phy.lolipop.lan','LAA1290633','daisuke0804');
-$sql = $pdo->query('select * from commodity where ');
+$pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;charset=utf8',
+    'LAA1290633','daisuke0804');
+$sql = $pdo->query('select * from item join color on item.item_id == color.item_id join purchase_details on item.item_id == purchase_details.item_ID group by ');
 $flg = true;
-echo '<div class="popular"><a href=""></a><div>';//人気の商品
+//echo '<div class="popular"><a href=""></a><div>';//人気の商品
 foreach ($sql as $row){
     echo '<div class="popularcommodity">';
-    echo '<a href=""></a>';
-    echo $row['commodity_name'], '：';
-    echo $row['money'], '：';
+    echo '<a href="',$row['image_content'],'"></a>';
+    echo $row['item_name'];
+    echo $row['price'];
     echo '</div>';
     $flg=false;
 }
 if ($flg) {
     echo '商品が存在しません', '<br>';
 }
-$sql = $pdo->query('select * from commodity where ');
+$sql = $pdo->query('select * from item ');
 $flg = true;
-echo '<div class="campaign"><a href=""></a><div>';//キャンペーン商品
+//echo '<div class="campaign"><a href=""></a><div>';//キャンペーン商品
 foreach ($sql as $row){
     echo '<div class="campaigncommodity">';
-    echo '<a href=""></a>';
-    echo $row['commodity_name'], '：';
-    echo $row['money'], '：';
+    echo '<a href="',$row['image_content'],'"></a>';
+    echo $row['item_name'];
+    echo $row['price'];
     echo '</div>';
     $flg=false;
 }
@@ -58,3 +60,4 @@ if ($flg) {
 <script src="./script/script.js"></script>
 </body>
 </html>
+
