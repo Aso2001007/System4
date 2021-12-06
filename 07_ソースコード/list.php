@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <!--<link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./script/script.js" charset="UTF-8"></script>-->
+    <link rel="stylesheet" href="./css/style.css">    
 </head>
 <body>
 <form action="list.php" method="get">
