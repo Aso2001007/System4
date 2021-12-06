@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,42 +11,36 @@
 <body>
 
 <div class="head">
-    <a href="login-toppage.php" id="vanner">文房具サイト</a>
-    <input type="text" id="keyword" name="keyword" placeholder="キーワードで検索">
-    <button type="submit" id="keyword-button">🔍</button>
+    <a href="toppage.php" id="vanner">文房具サイト</a>
 </div>
 
-<dl class="category">
-    <dt>カテゴリーで探す</dt>
-    <dt><hr width="210"></dt>
-    <dt><a href="">鉛筆、ペン</a></dt>
-    <dt><hr width="210"></dt>
-    <dt><a href="">消しゴム</a></dt>
-    <dt><hr width="210"></dt>
-</dl>
 <div class="register">
     <h1>会員登録</h1>
 </div>
-
-
-<div class="register-main">
-    <form action="register.info.php" method="post">
-
-        <p class="reg-name">お名前：<br>
-            <input type="text" class="register-name"  placeholder="お名前を入力してください">
-        <p class="reg-tel">電話番号：<br>
-            <input type="text" class="register-tel" placeholder="電話番号を入力してください">
-        </p>
-        <p class="reg-email">Eメール：<br>
-            <input type="text" class="register-email" placeholder="メールアドレスを入力してください">
-        </p>
-        <p class="reg-pass">パスワード：<br>
-            <input type="text" class="register-pass" placeholder="パスワードを入力してください">
-        </p>
-
-        <p><input type="submit" class="register-submit" value="完了"></p>
-    </form>
-</div>
-
+<?php
+$name=$address=$pass=$tel=$mail='';
+if (isset($_SESSION['member'])) {
+    $name=$_SESSION['member']['name'];
+    $address=$_SESSION['member']['address'];
+    $pass=$_SESSION['member']['pass'];
+    $tel=$_SESSION['member']['tel'];
+    $mail=$_SESSION['member']['mail'];
+}
+echo '<div class="register-main">';
+echo '<form action="register-info.php" method="post">';
+echo '<p class="reg-name">お名前</p>';
+echo '<input type="text" class="register-name" name="name" value="',$name,'">','<br>';
+echo '<p class="reg-mail">メールアドレス</p>';
+echo '<input type="text" class="register-mail" name="mail" value"',$mail,'">','<br>';
+echo '<p class="reg-tel">電話番号</p>';
+echo '<input type="text" class="register-tel" name="tel" value="',$tel,'">','<br>';
+echo '<p class="reg-pass">パスワード</p>';
+echo '<input type="password" class="register-pass" name="pass" value="',$pass,'">','<br>';
+echo '<p class="reg-address">ご住所</p>';
+echo '<input type="text" class="register-address" name="address" value="',$address,'">','<br>';
+echo '<input type="submit" class="register-submit" value="確定">';
+echo '</form>';
+echo '</div>';
+?>
 </body>
 </html>
