@@ -23,7 +23,7 @@
     <dt><a href="list.php?id=2">消しゴム</a></dt>
     <dt><hr width="210"></dt>
 </dl>
-並び替え|<a href="list.php?id=3">価格が安い順</a>|<a href="list.php?id=4">価格が高い順</a>|<a href="list.php?id=5">新着順</a>
+<div class="pagename>商品一覧</div>"並び替え|<a href="list.php?id=3">価格が安い順</a>|<a href="list.php?id=4">価格が高い順</a>|<a href="list.php?id=5">新着順</a>
 </form>
 <?php
 $pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;charset=utf8',
