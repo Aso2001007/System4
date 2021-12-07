@@ -1,3 +1,4 @@
+/*共通部分*/
 body {
     background-color: #F3F3F3;
     margin: 0;
@@ -189,7 +190,8 @@ dl.category {
 
     color: #49CEAE;
 }
-
+/*共通部分ここまで*/
+/*会員情報・編集ページ*/
 button.comp-edit {
     position: absolute;
     width: 94px;
@@ -267,7 +269,8 @@ input.edittext {
     font-weight: normal;
     font-size: 24px;
 }
-
+/*会員情報・編集ここまで*/
+/*ログインページ*/
 div.login {
     position: absolute;
 
@@ -339,7 +342,8 @@ button.login_button {
     box-sizing: border-box;
     border-radius: 3px;
 }
-
+/*ログインここまで*/
+/*カートページ*/
 a.cart_title {
     position: absolute;
     width: 112px;
