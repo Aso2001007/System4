@@ -269,6 +269,25 @@ input.edittext {
     font-weight: normal;
     font-size: 24px;
 }
+
+div.edit-out {
+    position: absolute;
+    text-align: center;
+    padding-top: 200px;
+
+    width: 860px;
+    height: 250px;
+    left: 333px;
+    top: 282px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 33px;
+
+    background: #FFFFFF;
+}
 /*会員情報・編集ここまで*/
 /*ログインページ*/
 div.login {
