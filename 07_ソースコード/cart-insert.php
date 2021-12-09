@@ -1,5 +1,5 @@
 <?php session_start();?>
-<!--カート内商品追加-->
+<!--カート内商品追加した際に飛ぶページ-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
