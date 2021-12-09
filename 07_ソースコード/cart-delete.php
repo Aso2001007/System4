@@ -1,5 +1,5 @@
 <?php session_start();?>
-<!--カート内商品削除-->
+<!--カート内商品を削除した際に飛ぶページ-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
