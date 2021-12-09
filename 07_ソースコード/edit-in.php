@@ -48,6 +48,7 @@ echo '<form action="edit-out.php" method="post">';
 
 ?>
 <button type="submit" class="comp-edit">完了</button>
+</form>
 <script src="./script/script.js"></script>
 </body>
 </html>
