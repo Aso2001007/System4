@@ -1,4 +1,5 @@
 <?php
+/*カート内*/
 echo '<form action="order.php">';
 $total=0;
 echo '<a class="cart_title">カート内</a><br>';
