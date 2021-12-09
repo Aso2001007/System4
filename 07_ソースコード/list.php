@@ -26,6 +26,7 @@
 <div class="pagename>商品一覧</div>"並び替え|<a href="list.php?id=3">価格が安い順</a>|<a href="list.php?id=4">価格が高い順</a>|<a href="list.php?id=5">新着順</a>
 </form>
 <?php
+error_reporting(0);//ifで選択されなかったSQLがエラーになるから非表示にする(このページのphpはすべて非表示)
 $pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;charset=utf8',
     'LAA1290633','daisuke0804');
 if (isset($_GET['keyword']) && !isset($_GET['id'])) {
@@ -49,7 +50,7 @@ $flg = true;
 foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<div class="item">';
-    //echo '<a href=""></a>';//商品画像
+    echo '<a href="item.php?id="', $item_id, '"><img src="./img/',$item_id,'.png"></a>';//商品画像
     echo '<a href="item.php?id=', $item_id, '">', $row['item_name'], '</a>';
     echo $row['price'];
     echo '</div>';
