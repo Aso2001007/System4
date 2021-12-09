@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>購入完了</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/comp.css">
 </head>
 <body>
 
-<input type="button" onclick="location.href='login-toppage.php'" value="文房具サイト">
+<div class="head">
+    <a href="toppage-log.php" id="vanner">文房具サイト</a>
+</div>
+<div class="comp-h3">
+    <h3>購入完了</h3>
+</div>
 
-<input type="button" onclick="location.href='cart.php'" value="カートの中">
-
-<input type="button" onclick="location.href='information.php'" value="会員情報">
-
-<input type="button" onclick="location.href='toppage.php'" value="ログアウト">
-
-<input type="text"><button type="submit">検索</button>
+<div class="comp-main">
+    <h1 class="comp-h1">購入が完了しました</h1>
+    <p class="comp-p">ご注文ありがとうございました。</p>
+    <button type="submit" class="comp" onclick=location.href="./login-toppage.php">戻る</button>
+</div>
 
 </body>
 </html>
