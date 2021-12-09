@@ -1,9 +1,10 @@
 <?php session_start();?>
+<!--カート内ボタンを押した際に飛ぶページ-->
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>文房具サイト</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
