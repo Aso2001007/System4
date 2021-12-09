@@ -60,6 +60,5 @@ if ($flg) {
     echo '商品が存在しません', '<br>';
 }
 ?>
-<script src="./script/script.js"></script>
 </body>
 </html>
