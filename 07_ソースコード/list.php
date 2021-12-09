@@ -30,7 +30,7 @@ error_reporting(0);//ifで選択されなかったSQLがエラーになるから
 $pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;charset=utf8',
     'LAA1290633','daisuke0804');
 if (isset($_GET['keyword']) && !isset($_GET['sql'])) {
-    $sql=$pdo->prepare('select * from item where item_name like ?');
+    $sql=$pdo->prepare('select * from item where item_name like ? order by item_id asc');
     $sql->execute(['%'.$_GET['keyword'].'%']);
 } else if($_GET['sql'] == 1){
     $sql=$pdo->query('select * from item where category_id=1 order by item_id asc');
