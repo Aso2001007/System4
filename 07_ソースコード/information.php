@@ -1,9 +1,10 @@
 <?php session_start();?>
+<!--会員情報表示ページ-->
     <!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>文房具サイト</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
 <body>
