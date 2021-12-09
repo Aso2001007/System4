@@ -1,0 +1,97 @@
+/*会員情報・編集ページ*/
+button.comp-edit {
+    position: absolute;
+    width: 94px;
+    height: 56px;
+    left: 333px;
+    top: 850px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: rgba(248, 172, 24, 0.85);
+    border: 1px solid #555555;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+div.infor-edit{
+    position: absolute;
+    width: 860px;
+    height: 550px;
+    left: 333px;
+    top: 282px;
+
+    background: #FFFFFF;
+
+}
+
+div.information-box {
+    padding-left: 40px;
+    padding-top: 37px;
+    padding-bottom: 36px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 33px;
+
+    border: 1px solid #ABABAB;
+}
+
+a.member-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+div.edit-box {
+    padding-left: 20px;
+    padding-top: 38px;
+    padding-bottom: 37px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    border: 1px solid #ABABAB;
+}
+
+input.edittext {
+    width: 580px;
+    height: 25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+div.edit-out {
+    position: absolute;
+    text-align: center;
+    padding-top: 200px;
+
+    width: 860px;
+    height: 250px;
+    left: 333px;
+    top: 282px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 33px;
+
+    background: #FFFFFF;
+}
