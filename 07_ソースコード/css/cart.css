@@ -1,0 +1,72 @@
+/*カートページ*/
+a.cart_title {
+    position: absolute;
+    width: 112px;
+    height: 33px;
+    left: 277px;
+    top: 185px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #5E5E5E;
+}
+
+a.count_title {
+    position: absolute;
+    width: 301px;
+    height: 56px;
+    left: 286px;
+    top: 236px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
+
+a.total {
+    position: absolute;
+    width: 301px;
+    height: 56px;
+    left: 405px;
+    top: 236px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
+
+button.order_button {
+    position: absolute;
+    width: 341px;
+    height: 88px;
+    left: 286px;
+    top: 302px;
+
+    background: #FFDC61;
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
