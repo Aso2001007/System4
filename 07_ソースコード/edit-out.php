@@ -34,11 +34,13 @@ if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell)){
         /*パスワードの正規表現*/
         if (preg_match('/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,24}/',$password)){
 
-            if (isset($_SESSION['member'])) {
+            /*if (isset($_SESSION['member'])) {
                 $id=$_SESSION['member']['id'];
                 $sql=$pdo->prepare('SELECT * FROM member WHERE user_id=?');
                 $sql->execute([$id]);
-            }
+            }*/
+            
+            $id=$_SESSION['member']['id'];
 
             if (isset($_SESSION['member'])) {
                 $sql=$pdo->prepare('UPDATE member SET name=?,address=?,tell=?,mail=?,password=? WHERE user_id=?');
