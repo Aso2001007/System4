@@ -26,7 +26,6 @@ echo '</div>';
 
 /*会員情報*/
 echo '<p id="title">会員情報</p>';
-
 echo '<form action="edit-out.php" method="post">';
     echo '<div class="infor-edit">';
         echo '<div class="edit-box"><a>お名前：</a>';
@@ -45,7 +44,6 @@ echo '<form action="edit-out.php" method="post">';
             echo '<input type="text" name="address" class="edittext" value="',$address,'">';
         echo '</div>';
     echo '</div>';
-
 ?>
 <button type="submit" class="comp-edit">完了</button>
 </form>
