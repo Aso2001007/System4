@@ -1,0 +1,504 @@
+body {
+    background-color: #F3F3F3;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.head {
+    display: block;
+    width: 1515px;
+    height: 147px;
+    left: 0px;
+    top: 0px;
+
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+dl.category {
+    width: 229px;
+    height: 715px;
+    left: 13px;
+    top: 162px;
+    font-size: 24px;
+
+    font-family: Roboto;
+    font-style: normal;
+    color: #5E5E5E;
+    font-weight: normal;
+    line-height: 28px;
+
+    border-right-style: solid;
+    border-width: 1px;
+    border-right-color: #ABABAB;
+
+    padding-left: 10px;
+
+}
+
+dt a{
+    color: #5E5E5E;
+}
+
+div.pagename {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    top: 172px;
+    left: 263px;
+
+    font-size: 24px;
+    color: #5E5E5E;
+}
+
+#user-name {
+    position: absolute;
+    width: 144px;
+    height: 28px;
+    left: 915px;
+    top: 48px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+
+}
+
+
+#title {
+    position: absolute;
+    width: 112px;
+    height: 33px;
+    left: 277px;
+    top: 185px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #5E5E5E;
+}
+
+#vanner {
+    position: absolute;
+    width: 344px;
+    height: 80px;
+    left: 36px;
+    top: 35px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 64px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+
+    color: #000000;
+}
+
+#infor-regster {
+    position: absolute;
+    width: 126.76px;
+    height: 39px;
+    left: 830px;
+    top: 93px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+    border: 1px solid #F9F9F9;
+
+    background: #49CEAE;
+    border-radius: 5px;
+}
+
+#cart {
+    position: absolute;
+    width: 248px;
+    height: 51px;
+    left: 1240px;
+    top: 25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+
+    background: #E5E5E5;
+    border: 1px solid #A3D27D;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    color: #434343;
+}
+
+#keyword {
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    left: 1100px;
+    top: 92px;
+
+    background: #E6E6E6;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #797979;
+}
+
+#keyword-button {
+    position: absolute;
+    height: 40px;
+    left: 1430px;
+    top: 92px;
+
+    background: #E6E6E6;
+    border: 1px solid #C6C6C6;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #797979;
+}
+
+#log {
+    position: absolute;
+    width: 130px;
+    height: 39px;
+    left: 960px;
+    top: 93px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    border: 2px solid #49CEAE;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    color: #49CEAE;
+}
+
+button.comp-edit {
+    position: absolute;
+    width: 94px;
+    height: 56px;
+    left: 333px;
+    top: 850px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #FFFFFF;
+
+    background: rgba(248, 172, 24, 0.85);
+    border: 1px solid #555555;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+div.infor-edit{
+    position: absolute;
+    width: 860px;
+    height: 550px;
+    left: 333px;
+    top: 282px;
+
+    background: #FFFFFF;
+
+}
+
+div.information-box {
+    padding-left: 40px;
+    padding-top: 37px;
+    padding-bottom: 36px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 33px;
+
+    border: 1px solid #ABABAB;
+}
+
+a.member-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+div.edit-box {
+    padding-left: 20px;
+    padding-top: 38px;
+    padding-bottom: 37px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    border: 1px solid #ABABAB;
+}
+
+input.edittext {
+    width: 580px;
+    height: 25px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+div.login {
+    position: absolute;
+
+    padding: 60px;
+    width: 713px;
+    height: 534px;
+    left: 370px;
+    top: 202px;
+
+    background: #FFFFFF;
+    border: 1px solid #A5A5A5;
+    box-sizing: border-box;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+a.login_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #333333;
+}
+
+a.log_text {
+    margin-top: 30px;
+}
+
+input.log_box {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 583px;
+    height: 41px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    background: #FFFFFF;
+    border: 1px solid #5D5D5D;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+button.login_button {
+    width: 583px;
+    height: 62px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: #F8AC18;
+    border: 1px solid #5D5D5D;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+a.cart_title {
+    position: absolute;
+    width: 112px;
+    height: 33px;
+    left: 277px;
+    top: 185px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #5E5E5E;
+}
+
+a.count_title {
+    position: absolute;
+    width: 301px;
+    height: 56px;
+    left: 286px;
+    top: 236px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
+
+a.total {
+    position: absolute;
+    width: 301px;
+    height: 56px;
+    left: 405px;
+    top: 236px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
+
+button.order_button {
+    position: absolute;
+    width: 341px;
+    height: 88px;
+    left: 286px;
+    top: 302px;
+
+    background: #FFDC61;
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #2D2D2D;
+}
+
+dt#categorysearch {
+    padding-top: 25px;
+}
+
+#popular {
+    position: absolute;
+    top: 190px;
+    left: 250px;
+    margin-bottom: 13px;
+    padding-right: 5px;
+}
+
+ul.popularitem {
+    position: absolute;
+    top: -15px;
+    left: 550px;
+    height: 325px;
+    width: 580px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.popularitem li {
+    background-color: white;
+    float: left;
+    width: 250px;
+    height: 325px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.popularitem img{
+    width: 250px;
+    height: 250px;
+}
+
+#campaign {
+    position: absolute;
+    top: 335px;
+    left: 0px;
+    margin-top: 13px;
+    padding-right: 5px;
+}
+
+ul.campaignitem {
+    position: absolute;
+    top: -15px;
+    left: 550px;
+    height: 325px;
+    width: 580px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.campaignitem li {
+    background-color: white;
+    float: left;
+    width: 250px;
+    height: 325px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.campaignitem img{
+    width: 250px;
+    height: 250px;
+}
+div.itemname{
+    color: #333333;
+}
+
+div.price{
+    color: #FC0202;
+}
