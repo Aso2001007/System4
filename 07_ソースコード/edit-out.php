@@ -23,9 +23,9 @@ $pdo = new PDO('mysql:host=mysql154.phy.lolipop.lan;
 
 echo '<div class="edit-out">';
 
-$tell=$_POST['tell'];
+$tell=$_POST['tel'];
 $mail=$_POST['mail'];
-$password=$_POST['password'];
+$password=$_POST['pass'];
 
 /*電話番号の正規表現 「11文字の数列」*/
 if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell)){
@@ -43,16 +43,16 @@ if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell)){
             $id=$_SESSION['member']['id'];
 
             if (isset($_SESSION['member'])) {
-                $sql=$pdo->prepare('UPDATE member SET name=?,address=?,tell=?,mail=?,password=? WHERE user_id=?');
+                $sql=$pdo->prepare('UPDATE member SET name=?,address=?,tel=?,mail=?,pass=? WHERE user_id=?');
                 $sql->execute([
-                    $_REQUEST['name'],$_REQUEST['address'],$_REQUEST['tell'],
+                    $_REQUEST['name'],$_REQUEST['address'],$_REQUEST['tel'],
                     $_REQUEST['mail'],$_REQUEST['password'],$id]);
 
                 /*sessionに再登録*/
                 $_SESSION['member']=[
                     'id'=>$id,'name'=>$_REQUEST['name'],'address'=>$_REQUEST['address'],
-                    'tell'=>$_REQUEST['tell'],'mail'=>$_REQUEST['mail'],
-                    'password'=>$_REQUEST['password']];
+                    'tel'=>$_REQUEST['tel'],'mail'=>$_REQUEST['mail'],
+                    'password'=>$_REQUEST['pass']];
 
                 echo '<a>お客様情報を更新しました。</a><br>';
                 echo '<a href="information.php">会員情報ページに戻る</a>';
