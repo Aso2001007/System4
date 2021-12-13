@@ -14,7 +14,7 @@ session_start();
     <div id="user-name">名前 <?php echo $_SESSION['member']['name']?>さん</div>
     <button type="submit"  onclick=location.href="./cart.php" id="cart">カートの中　　🛒</button><br>
     <button type="submit" id="infor-regster" onclick=location.href="./information.php">会員情報</button>
-    <button type="submit" id="log" onclick=location.href="./logout.php.php">ログアウト</button>
+    <button type="submit" id="log" onclick=location.href="./logout.php">ログアウト</button>
     <form action="list.php" method="get">
         <input type="search" id="keyword" name="keyword" placeholder="キーワードで検索">
         <button type="submit" id="keyword-button">🔍</button>
