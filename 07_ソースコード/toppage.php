@@ -8,7 +8,7 @@
 <body>
     <div class="head">
         <a href="toppage.php" id="vanner">文房具サイト</a>
-        <button type="submit"  onclick=location.href="./cart.php" id="cart">カートの中　　🛒</button><br>
+        <button type="submit"  onclick=location.href="./login-in.php" id="cart">カートの中　　🛒</button><br>
         <button type="submit" id="infor-regster" onclick=location.href="./register.php">会員登録</button>
         <button type="submit" id="log" onclick=location.href="./login.php">ログイン</button>
         <form action="list.php" method="get">
@@ -72,4 +72,3 @@ if ($flg) {
 ?>
 </body>
 </html>
-
