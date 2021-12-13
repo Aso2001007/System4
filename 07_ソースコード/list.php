@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>list</title>
     <link rel="stylesheet" href="./css/list.css">
 </head>
 <body>
