@@ -18,9 +18,9 @@
     <dl class="category">
         <dt id="categorysearch">カテゴリーで探す</dt>
         <dt><hr width="210"></dt>
-        <dt><a href="list.php?id=1">鉛筆、ペン</a></dt>
+        <dt><a href="list.php?sql=1">鉛筆、ペン</a></dt>
         <dt><hr width="210"></dt>
-        <dt><a href="list.php?id=2">消しゴム</a></dt>
+        <dt><a href="list.php?sql=2">消しゴム</a></dt>
         <dt><hr width="210"></dt>
     </dl>
 </form>
@@ -50,7 +50,7 @@ if ($flg) {
 }
 $sql = $pdo->query('select * from item order by date desc,item_id asc');
 $flg = true;
-echo '<div id="campaign"><a href="list.php?id=5"><img src="./img/CP.jpg" width="580px" height="325px"></a><div>';//キャンペーン商品
+echo '<div id="campaign"><a href="list.php?sql=5"><img src="./img/CP.jpg" width="580px" height="325px"></a><div>';//キャンペーン商品
 if($sql){
     echo '<ul class="campaignitem">';
 }
