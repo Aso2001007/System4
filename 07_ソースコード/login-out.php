@@ -30,7 +30,7 @@ if (preg_match('|^[0-9a-z_./?-]+@([0-9a-z]+\.)+[0-9a-z-]+$|',$tell_mail)){
     foreach ($sql as $row){
         $_SESSION['member']=[
             'id'=>$row['user_id'],'mail'=>$row['mail'],
-            'name'=>$row['name'],'phone'=>$row['tel'],
+            'name'=>$row['name'],'tel'=>$row['tel'],
             'password'=>$row['pass'],'address'=>$row['address']];
     }
     if (isset($_SESSION['member'])){
@@ -49,7 +49,7 @@ if (preg_match('|^[0-9a-z_./?-]+@([0-9a-z]+\.)+[0-9a-z-]+$|',$tell_mail)){
     foreach ($sql as $row){
     $_SESSION['member']=[
     'id'=>$row['user_id'],'mail'=>$row['mail'],
-    'name'=>$row['name'],'phone'=>$row['tel'],
+    'name'=>$row['name'],'tel'=>$row['tel'],
     'password'=>$row['pass'],'address'=>$row['address']];
     }
 if (isset($_SESSION['member'])){
