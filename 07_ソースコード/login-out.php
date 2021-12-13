@@ -9,7 +9,7 @@
 <body>
 
 <div class="head">
-    <a href="toppage.php" id="vanner">文房具サイト</a>
+    <a href="login-toppage.php" id="vanner">文房具サイト</a>
 </div>
 
 <div class="login">
