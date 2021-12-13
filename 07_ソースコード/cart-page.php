@@ -11,7 +11,7 @@
 <?php
 
 echo '<div class="head">';
-echo'<a href="toppage-log.html" id="vanner">文房具サイト</a>';/*トップページへ*/
+echo'<a href="login-toppage.php" id="vanner">文房具サイト</a>';/*トップページへ*/
 echo '</div>';
 
 require 'cart.php';
