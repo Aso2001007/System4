@@ -20,14 +20,32 @@ session_start();
         <button type="submit" id="keyword-button">🔍</button>
 </div>
 <dl class="category">
-    <dt id="categorysearch">カテゴリーで探す</dt>
+    <dt id="all"><a href="login-list.php?default=1">全ての商品</a></dt>
     <dt><hr width="210"></dt>
-    <dt><a href="login-list.php?sql=1">鉛筆、ペン</a></dt>
+    <dt id="cp"><a href="login-list.php?sql=10">キャンペーン</a></dt>
     <dt><hr width="210"></dt>
-    <dt><a href="login-list.php?sql=2">消しゴム</a></dt>
+    <dt id="sortname">並び替え</dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=6">価格が安い順</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=7">価格が高い順</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=8">新着順</a></dt>
+    <dt><hr width="210"></dt>
+    <dt id="sortname">カテゴリーで探す</dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=1">鉛筆、ペン</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=2">消しゴム</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=3">定規</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=4">筆箱</a></dt>
+    <dt><hr width="210"></dt>
+    <dt class="sort"><a href="login-list.php?sql=5">雑貨</a></dt>
     <dt><hr width="210"></dt>
 </dl>
-<div class="pagename">商品一覧</div><div class="sort">並び替え|<a href="login-list.php?sql=3">価格が安い順</a>|<a href="login-list.php?sql=4">価格が高い順</a>|<a href="login-list.php?sql=5">新着順</a></div>
+<div class="pagename">商品一覧</div>
 </form>
 <?php
 error_reporting(0);//ifで選択されなかったSQLがエラーになるから非表示にする(このページのphpはすべて非表示)
@@ -36,19 +54,22 @@ $pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;char
 if (isset($_GET['keyword']) && !isset($_GET['sql'])) {
     $sql=$pdo->prepare('select * from item where item_name like ? order by item_id asc');
     $sql->execute(['%'.$_GET['keyword'].'%']);
-} else if($_GET['sql'] == 1){
-    $sql=$pdo->query('select * from item where category_id=1 order by item_id asc');
-} else if($_GET['sql'] == 2){
-    $sql=$pdo->query('select * from item where category_id=2 order by item_id asc');
-} else if($_GET['sql'] == 3){
-    $sql=$pdo->query('select * from item order by price asc, item_id asc');
-} else if($_GET['sql'] == 4){
-    $sql=$pdo->query('select * from item order by price desc, item_id asc');
-} else if($_GET['sql'] == 5){
-    $sql=$pdo->query('select * from item order by date desc, item_id asc');
+} elseif (isset($_GET['default'])){
+    $sql=$pdo->query('select * from item order by item_id asc');
+} else if($_GET['sql'] <= 5){
+    $sql=$pdo->prepare('select * from item where category_id=? order by item_id asc');
+    $sql->bindValue(1,$_GET['sql'],PDO::PARAM_INT);
 } else if($_GET['sql'] == 6){
+    $sql=$pdo->query('select * from item order by price asc, item_id asc');
+} else if($_GET['sql'] == 7){
+    $sql=$pdo->query('select * from item order by price desc, item_id asc');
+} else if($_GET['sql'] == 8){
+    $sql=$pdo->query('select * from item order by date desc, item_id asc');
+} else if($_GET['sql'] == 9){
     $sql=$pdo->query('select * from item join purchase_details on item.item_id = purchase_details.item_id order by purchase_details.quantity desc, item.item_id asc');
-} else {
+} else if($_GET['sql'] == 10){
+    $sql=$pdo->query('select * from item where cp=1 order by item_id asc');
+}else{
     $sql=$pdo->query('select * from item order by item_id asc');
 }
 $sql->execute();
