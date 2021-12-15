@@ -1,4 +1,4 @@
-<?php require 'commom.php';?>
+<?php require 'commom_item.php';?>
     <link rel="stylesheet" href="./css/item.css">
 <?php
 
