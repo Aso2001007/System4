@@ -6,7 +6,7 @@ a.cant_edit {
     font-size: 18px;
 }
 
-p.information_title {
+a.information_title {
     position: absolute;
     width: 112px;
     height: 33px;
