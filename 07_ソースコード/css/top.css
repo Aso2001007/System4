@@ -1,4 +1,6 @@
 body {
+    width: 1440px;
+    height: 1024px;
     background-color: #F3F3F3;
     margin: 0;
 }
@@ -8,9 +10,9 @@ a {
 }
 
 div.head {
-    display: block;
+    position: absolute;
     width: 1515px;
-    height: 147px;
+    height: 100px;
     left: 0px;
     top: 0px;
 
@@ -18,11 +20,27 @@ div.head {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#categorysearch{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    color: #5E5E5E;
+    font-weight: normal;
+}
+
+#category-text{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    color: #5E5E5E;
+    font-weight: normal;
+}
 dl.category {
+    position: absolute;
     width: 229px;
-    height: 715px;
-    left: 13px;
-    top: 162px;
+    height: 655px;
+    left: 0px;
+    top: 100px;
     font-size: 24px;
 
     font-family: Roboto;
@@ -37,10 +55,22 @@ dl.category {
 
     padding-left: 10px;
 
+    user-select: none;
+
 }
 
 dt a{
     color: #5E5E5E;
+}
+
+#all{
+    padding-top: 20px;
+    margin-left: 10px;
+}
+
+#all a:hover{
+    font-size: 30px;
+    color: red;
 }
 
 div.pagename {
@@ -52,6 +82,19 @@ div.pagename {
 
     font-size: 24px;
     color: #5E5E5E;
+}
+
+.sort {
+    margin-left: 30px;
+}
+
+.sort a:hover{
+    font-size: 30px;
+    color: red;
+}
+#sortname{
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 #user-name {
@@ -93,50 +136,56 @@ div.pagename {
     position: absolute;
     width: 344px;
     height: 80px;
-    left: 36px;
-    top: 35px;
+    left: 30px;
+    top: 10px;
 
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 55px;
-    line-height: 64px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
+    text-decoration: none;
     color: #000000;
+    cursor: pointer;
+}
+
+#vanner:hover{
+    font-size: 57px;
 }
 
 #infor-regster {
     position: absolute;
-    width: 126.76px;
-    height: 39px;
-    left: 830px;
-    top: 93px;
-
+    width: 110px;
+    height: 30px;
+    left: 900px;
+    top: 60px;
+    background: #49CEAE;
+    border-color: #49CEAE;
+    border-style: solid;
+    border-radius: 5px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
-
+    font-feature-settings: 'pnum' on, 'lnum' on;
     color: #FFFFFF;
-    border: 1px solid #F9F9F9;
 
-    background: #49CEAE;
-    border-radius: 5px;
+    cursor: pointer;
 }
 
 #cart {
     position: absolute;
-    width: 248px;
-    height: 51px;
-    left: 1240px;
-    top: 25px;
+    width: 170px;
+    height: 40px;
+    left: 1280px;
+    top: 10px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 33px;
 
     background: #E5E5E5;
@@ -145,14 +194,15 @@ div.pagename {
     border-radius: 3px;
 
     color: #434343;
+    cursor: pointer;
 }
 
 #keyword {
     position: absolute;
-    width: 330px;
-    height: 40px;
-    left: 1100px;
-    top: 92px;
+    width: 300px;
+    height: 30px;
+    left: 1151px;
+    top: 60px;
 
     background: #E6E6E6;
     border: 1px solid #C6C6C6;
@@ -162,48 +212,49 @@ div.pagename {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 33px;
-
     color: #797979;
 }
 
 #keyword-button {
     position: absolute;
-    height: 40px;
-    left: 1430px;
-    top: 92px;
-
-    background: #E6E6E6;
-    border: 1px solid #C6C6C6;
+    width: 30px;
+    height: 30px;
+    left: 1412px;
+    top: 60px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 18px;
     line-height: 33px;
-
     color: #797979;
+
+    background: rgba(1,1,1,0);
+    border: none;
+    cursor: pointer;
 }
 
 #log {
     position: absolute;
-    width: 130px;
-    height: 39px;
-    left: 960px;
-    top: 93px;
+    width: 110px;
+    height: 30px;
+    left: 1025px;
+    top: 60px;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #49CEAE;
 
     border: 2px solid #49CEAE;
     box-sizing: border-box;
     border-radius: 5px;
-
-    color: #49CEAE;
+    cursor: pointer;
 }
 
 button.comp-edit {
@@ -470,6 +521,12 @@ ul.popularitem {
     left: 0px;
     margin-top: 13px;
     padding-right: 5px;
+    padding-left: 11px;
+    border-left-style: solid;
+    border-width: 1px;
+    border-left-color: #ABABAB;
+
+    margin-left: -11px;
 }
 
 ul.campaignitem {
@@ -496,9 +553,16 @@ ul.campaignitem {
     height: 250px;
 }
 div.itemname{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     color: #333333;
 }
 
 div.price{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     color: #FC0202;
+    padding-top: 24px;
 }
