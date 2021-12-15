@@ -10,11 +10,11 @@
 <body>
 <!--sessionで会員情報を取得-->
 <?php
-$name=$address=$tell=$mail=$password='';
+$name=$address=$tel=$mail=$password='';
 if (isset($_SESSION['member'])) {
     $name=$_SESSION['member']['name'];
     $address=$_SESSION['member']['address'];
-    $tell=$_SESSION['member']['tell'];
+    $tell=$_SESSION['member']['tel'];
     $mail=$_SESSION['member']['mail'];
     $password=$_SESSION['member']['password'];
 }
@@ -33,7 +33,7 @@ echo '<div class="infor-edit">';
         echo '<a class="member-data">',$name,'</a>';
     echo '</div>';
     echo '<div class="information-box"><a>電話番号：</a>';
-        echo '<a class="member-data">',$tell,'</a>';
+        echo '<a class="member-data">',$tel,'</a>';
     echo '</div>';
     echo '<div class="information-box"><a>メールアドレス：</a>';
         echo '<a class="member-data">',$mail,'</a>';
