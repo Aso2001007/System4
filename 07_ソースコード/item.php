@@ -33,7 +33,7 @@ echo "rt = dummy $rt end" ;
 echo "rt = $rt";
 echo "item_id ($item_id)";
 
-echo '<form action="cart.php" method="post">';//カートに入れる
+echo '<form action="cart-insert.php" method="post">';//カートに入れる
 $cnt=0;
 foreach ( $stmt as $row ) {
 
