@@ -40,20 +40,10 @@ if (isset($_POST["edit"])){
 
                         header("location:http://aso2001007.versus.jp/System4/information.php");
                         exit;
-                    }else{
-                        echo '<a class="cant_edit">お客様情報を更新できませんでした</a>';
                     }
-                } else {
-                    echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
                 }
-            }else{
-                echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
             }
-        }else{
-            echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
         }
-    }else{
-        echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
     }
 }
 
@@ -85,7 +75,11 @@ echo '<div class="head">';
 echo '</div>';
 
 /*会員情報*/
-echo '<p class="information_title">会員情報</p>';
+if (isset($_POST["edit"])){
+    echo '<a class="cant_edit">会員情報を更新出来ませんでした</a>';
+}
+    
+echo '<a class="information_title">会員情報</a>';
 echo '<form action="edit-in.php" method="post">';
     echo '<div class="infor-edit">';
         echo '<div class="edit-box"><a>お名前：</a>';
