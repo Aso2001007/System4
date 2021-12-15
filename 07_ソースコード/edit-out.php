@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>文房具サイト</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/edit.css">
     </head>
 <body>
 <?php
@@ -28,7 +29,7 @@ $mail=$_POST['mail'];
 $password=$_POST['pass'];
 
 /*電話番号の正規表現 「11文字の数列」*/
-if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell)){
+if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tel)){
     /*メールアドレスの正規表現 「英数列+@+英数列」*/
     if (preg_match('|^[0-9a-z_./?-]+@([0-9a-z]+\.)+[0-9a-z-]+$|',$mail)){
         /*パスワードの正規表現「英大文字,小文字,数字が1文字以上含まれてる8文字以上24文字以下の文字列」*/
@@ -52,7 +53,7 @@ if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell)){
                 $_SESSION['member']=[
                     'id'=>$id,'name'=>$_REQUEST['name'],'address'=>$_REQUEST['address'],
                     'tel'=>$_REQUEST['tel'],'mail'=>$_REQUEST['mail'],
-                    'password'=>$_REQUEST['pass']];
+                    'password'=>$_REQUEST['password']];
 
                 echo '<a>お客様情報を更新しました。</a><br>';
                 echo '<a href="information.php">会員情報ページに戻る</a>';
