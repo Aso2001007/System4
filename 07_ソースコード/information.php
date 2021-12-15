@@ -26,7 +26,7 @@ echo '<div class="head">';
 echo '</div>';
 
 /*ページ名*/
-echo '<p class="information_title">会員情報</p>';
+echo '<a class="information_title">会員情報</a>';
 
 /*出力画面*/
 echo '<div class="infor-edit">';
