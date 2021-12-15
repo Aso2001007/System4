@@ -92,7 +92,7 @@ echo '<form action="edit-in.php" method="post">';
             echo '<input type="text" name="name" class="edittext" value="',$name,'">';
         echo '</div>';
         echo '<div class="edit-box"><a>電話番号：</a>';
-            echo '<input type="text" name="tell" class="edittext" value="',$tel,'">';
+            echo '<input type="text" name="tel" class="edittext" value="',$tel,'">';
         echo '</div>';
         echo '<div class="edit-box"><a>メールアドレス：</a>';
             echo '<input type="text" name="mail" class="edittext" value="',$mail,'">';
