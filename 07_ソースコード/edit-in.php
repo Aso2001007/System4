@@ -25,7 +25,7 @@ echo '<div class="head">';
 echo '</div>';
 
 /*会員情報*/
-echo '<p id="title">会員情報</p>';
+echo '<p class="information_title">会員情報</p>';
 echo '<form action="edit-out.php" method="post">';
     echo '<div class="infor-edit">';
         echo '<div class="edit-box"><a>お名前：</a>';
