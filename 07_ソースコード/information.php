@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <title>文房具サイト</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylwsheet" href="./css/edit.css">
     </head>
 <body>
 <!--sessionで会員情報を取得-->
