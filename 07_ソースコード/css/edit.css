@@ -1,4 +1,11 @@
 /*会員情報・編集ページ*/
+a.cant_edit {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
 a.information_title {
     position: absolute;
     width: 112px;
