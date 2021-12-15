@@ -41,19 +41,19 @@ if (isset($_POST["edit"])){
                         header("location:http://aso2001007.versus.jp/System4/information.php");
                         exit;
                     }else{
-                        echo '<a>お客様情報を更新できませんでした</a>';
+                        echo '<a class="cant_edit">お客様情報を更新できませんでした</a>';
                     }
                 } else {
-                    echo '<a>お客様情報を更新できませんでした。</a>';
+                    echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
                 }
             }else{
-                echo '<a>お客様情報を更新できませんでした。</a>';
+                echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
             }
         }else{
-            echo '<a>お客様情報を更新できませんでした。</a>';
+            echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
         }
     }else{
-        echo '<a>お客様情報を更新できませんでした。</a>';
+        echo '<a class="cant_edit">お客様情報を更新できませんでした。</a>';
     }
 }
 
