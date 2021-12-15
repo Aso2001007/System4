@@ -6,15 +6,16 @@
     <meta charset="UTF-8">
     <title>文房具サイト</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/edit.css">
 </head>
 <body>
 <!--sessionで会員情報を取得-->
 <?php
-$name=$address=$tell=$mail=$password='';
+$name=$address=$tel=$mail=$password='';
 if (isset($_SESSION['member'])) {
     $name=$_SESSION['member']['name'];
     $address=$_SESSION['member']['address'];
-    $tell=$_SESSION['member']['tell'];
+    $tell=$_SESSION['member']['tel'];
     $mail=$_SESSION['member']['mail'];
     $password=$_SESSION['member']['password'];
 }
@@ -32,7 +33,7 @@ echo '<form action="edit-out.php" method="post">';
             echo '<input type="text" name="name" class="edittext" value="',$name,'">';
         echo '</div>';
         echo '<div class="edit-box"><a>電話番号：</a>';
-            echo '<input type="text" name="tell" class="edittext" value="',$tell,'">';
+            echo '<input type="text" name="tell" class="edittext" value="',$tel,'">';
         echo '</div>';
         echo '<div class="edit-box"><a>メールアドレス：</a>';
             echo '<input type="text" name="mail" class="edittext" value="',$mail,'">';
