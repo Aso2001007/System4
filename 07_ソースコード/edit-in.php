@@ -1,10 +1,10 @@
 <?php session_start();
 if (isset($_POST["edit"])){
     /*DB接続*/
-    $pdo = new PDO('mysql:host=mysql154.phy.lolipop.lan;
-            dbname=LAA1290579-system4;charset=utf8',
-        'LAA1290579',
-        'IZUken0626');
+   $pdo = new PDO('mysql:host=mysql152.phy.lolipop.lan;
+                  dbname=LAA1290633-system4; charset=utf8',
+                  'LAA1290633', 
+                  'daisuke0804');
 
     $tell=$_POST['tel'];
     $mail=$_POST['mail'];
