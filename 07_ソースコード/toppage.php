@@ -16,11 +16,19 @@
         <button type="submit" id="keyword-button">🔍</button>
     </div>
     <dl class="category">
-        <dt id="categorysearch">カテゴリーで探す</dt>
+        <dt id="all"><a href="list.php?default=1">全ての商品</a></dt>
         <dt><hr width="210"></dt>
-        <dt><a href="list.php?sql=1">鉛筆、ペン</a></dt>
+        <dt id="sortname">カテゴリーで探す</dt>
         <dt><hr width="210"></dt>
-        <dt><a href="list.php?sql=2">消しゴム</a></dt>
+        <dt class="sort"><a href="list.php?sql=1">鉛筆、ペン</a></dt>
+        <dt><hr width="210"></dt>
+        <dt class="sort"><a href="list.php?sql=2">消しゴム</a></dt>
+        <dt><hr width="210"></dt>
+        <dt class="sort"><a href="list.php?sql=3">定規</a></dt>
+        <dt><hr width="210"></dt>
+        <dt class="sort"><a href="list.php?sql=4">筆箱</a></dt>
+        <dt><hr width="210"></dt>
+        <dt class="sort"><a href="list.php?sql=5">雑貨</a></dt>
         <dt><hr width="210"></dt>
     </dl>
 </form>
@@ -29,7 +37,7 @@ $pdo=new PDO('mysql:host=mysql152.phy.lolipop.lan;dbname=LAA1290633-system4;char
     'LAA1290633','daisuke0804');
 $sql = $pdo->query('select * from item inner join purchase_details on item.item_id = purchase_details.item_id group by purchase_details.item_id having purchase_details.quantity > 0 order by purchase_details.quantity desc, item.item_id asc');
 $flg = true;
-echo '<div id="popular"><a href="list.php?sql=6"><img src="./img/人気.jpg" width="580px" height="325px"></a><div>';//人気の商品
+echo '<div id="popular"><a href="list.php?sql=9"><img src="./img/人気.jpg" width="580px" height="325px"></a><div>';//人気の商品
 if($sql){
     echo '<ul class="popularitem">';
 }
@@ -37,8 +45,8 @@ foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="item.php?id=', $item_id, '">';
     echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
-    echo '<div class="itemname">',$row['item_name'],'</div><br>';
-    echo '<div class="price">','¥',$row['price'],'</div><br>';
+    echo '<div class="itemname">',$row['item_name'],'</div>';
+    echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';
     $flg = false;
 }
@@ -48,9 +56,9 @@ if ($sql){
 if ($flg) {
     echo '商品が存在しません', '<br>';
 }
-$sql = $pdo->query('select * from item order by date desc,item_id asc');
+$sql = $pdo->query('select * from item where cp=1 order by item_id asc');
 $flg = true;
-echo '<div id="campaign"><a href="list.php?sql=5"><img src="./img/CP.jpg" width="580px" height="325px"></a><div>';//キャンペーン商品
+echo '<div id="campaign"><a href="list.php?sql=10"><img src="./img/CP.jpg" width="580px" height="325px"></a><div>';//キャンペーン商品
 if($sql){
     echo '<ul class="campaignitem">';
 }
@@ -58,8 +66,8 @@ foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="item.php?id=', $item_id, '">';
     echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
-    echo '<div class="itemname">',$row['item_name'],'</div><br>';
-    echo '<div class="price">','¥',$row['price'],'</div><br>';
+    echo '<div class="itemname">',$row['item_name'],'</div>';
+    echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';
     $flg = false;
 }
