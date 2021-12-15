@@ -32,7 +32,7 @@ if (isset($_POST["edit"])){
                     /*sessionに再登録*/
                     $_SESSION['member']=[
                         'id'=>$id,'name'=>$_REQUEST['name'],'address'=>$_REQUEST['address'],
-                        'tell'=>$_REQUEST['tel'],'mail'=>$_REQUEST['mail'],
+                        'tel'=>$_REQUEST['tel'],'mail'=>$_REQUEST['mail'],
                         'password'=>$_REQUEST['password']];
 
                     if (isset($_SESSION['member'])){
@@ -101,6 +101,5 @@ echo '<form action="edit-in.php" method="post">';
 ?>
 <button type="submit" name="edit" class="comp-edit">完了</button>
 </form>
-<script src="./script/script.js"></script>
 </body>
 </html>
