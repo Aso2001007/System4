@@ -1,4 +1,20 @@
 /*会員情報・編集ページ*/
+a.title {
+    position: absolute;
+    width: 112px;
+    height: 33px;
+    left: 277px;
+    top: 122px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+
+    color: #5E5E5E;
+}
+
 button.comp-edit {
     position: absolute;
     width: 94px;
@@ -26,7 +42,7 @@ div.infor-edit{
     width: 860px;
     height: 550px;
     left: 333px;
-    top: 282px;
+    top: 240px;
 
     background: #FFFFFF;
 
