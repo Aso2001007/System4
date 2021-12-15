@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <title>文房具サイト</title>
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylwsheet" href="./css/edit.css">
+        <link rel="stylesheet" href="./css/edit.css">
     </head>
 <body>
 <!--sessionで会員情報を取得-->
@@ -49,6 +49,5 @@ echo '</div>';
 ?>
 <!--会員情報編集ページへ移動-->
 <button type="submit" onclick="location.href='edit-in.php'" class="comp-edit">編集</button>
-<script src="./script/script.js"></script>
 </body>
 </html>
