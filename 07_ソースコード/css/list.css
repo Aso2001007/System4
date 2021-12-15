@@ -45,13 +45,17 @@ a {
 
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 55px;
     font-feature-settings: 'pnum' on, 'lnum' on;
 
     text-decoration: none;
     color: #000000;
     cursor: pointer;
+}
+
+#vanner:hover{
+    font-size: 57px;
 }
 
 #infor-regster {
@@ -158,11 +162,11 @@ a {
 }
 
 dl.category {
+    position: absolute;
     width: 229px;
-    /*height: 605px;*/
-    height: 1134px;
+    height: 655px;
     left: 0px;
-    top: 0px;
+    top: 100px;
     font-size: 24px;
 
     font-family: Roboto;
@@ -174,7 +178,8 @@ dl.category {
     border-right-style: solid;
     border-width: 1px;
     border-right-color: #ABABAB;
-    /*display: inline-block;*/
+
+    display: inline-block;
 
     padding-left: 10px;
 
@@ -186,7 +191,7 @@ dt a{
 }
 
 #all{
-    padding-top: 120px;
+    padding-top: 20px;
     margin-left: 10px;
 }
 
@@ -213,6 +218,8 @@ div.pagename {
 
     font-size: 24px;
     color: #5E5E5E;
+
+    user-select: none;
 }
 
 .sort {
@@ -225,6 +232,7 @@ div.pagename {
 }
 #sortname{
     margin-left: 20px;
+    font-weight: bold;
 }
 
 button.comp-edit {
@@ -455,6 +463,11 @@ button.order_button {
     left: 250px;
     list-style: none;
     overflow: hidden;
+    border-left-style: solid;
+    border-width: 1px;
+    border-left-color: #ABABAB;
+
+    margin-left: -11px;
 }
 
 .displayitem li {
@@ -482,4 +495,5 @@ div.price{
     font-style: normal;
     font-weight: bold;
     color: #FC0202;
+    padding-top: 24px;
 }
