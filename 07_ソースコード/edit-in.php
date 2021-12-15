@@ -6,7 +6,7 @@ if (isset($_POST["edit"])){
                   'LAA1290633', 
                   'daisuke0804');
 
-    $tell=$_POST['tel'];
+    $tel=$_POST['tel'];
     $mail=$_POST['mail'];
     $password=$_POST['password'];
 
