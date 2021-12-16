@@ -4,8 +4,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>会員登録</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>文房具サイト</title>
+    <link rel="stylesheet" href="./css/style-main.css">
     <link rel="stylesheet" href="./css/reg.css">
 </head>
 <body>
