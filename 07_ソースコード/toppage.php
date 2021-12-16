@@ -44,7 +44,7 @@ if($sql){
 foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="item.php?id=', $item_id, '">';
-    echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
+    echo '<img src="./img/',$item_id,'_1.png"><br>';//商品画像
     echo '<div class="itemname">',$row['item_name'],'</div>';
     echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';
@@ -65,7 +65,7 @@ if($sql){
 foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="item.php?id=', $item_id, '">';
-    echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
+    echo '<img src="./img/',$item_id,'_1.png"><br>';//商品画像
     echo '<div class="itemname">',$row['item_name'],'</div>';
     echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';

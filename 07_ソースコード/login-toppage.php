@@ -12,7 +12,7 @@ session_start();
 <div class="head">
     <a href="login-toppage.php" id="vanner">文房具サイト</a>
     <div id="user-name">名前 <?php echo $_SESSION['member']['name']?>さん</div>
-    <button type="submit"  onclick=location.href="./cart.php" id="cart">カートの中　　🛒</button><br>
+    <button type="submit"  onclick=location.href="./cart-page.php" id="cart">カートの中　　🛒</button><br>
     <button type="submit" id="infor-regster" onclick=location.href="./information.php">会員情報</button>
     <button type="submit" id="log" onclick=location.href="./logout.php">ログアウト</button>
     <form action="login-list.php" method="get">
@@ -48,7 +48,7 @@ if($sql){
 foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="login-item.php?id=', $item_id, '">';
-    echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
+    echo '<img src="./img/',$item_id,'_1.png"><br>';//商品画像
     echo '<div class="itemname">',$row['item_name'],'</div>';
     echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';
@@ -69,7 +69,7 @@ if($sql){
 foreach ($sql as $row){
     $item_id=$row['item_id'];
     echo '<li><a href="login-item.php?id=', $item_id, '">';
-    echo '<img src="./img/',$item_id,'.png"><br>';//商品画像
+    echo '<img src="./img/',$item_id,'_1.png"><br>';//商品画像
     echo '<div class="itemname">',$row['item_name'],'</div>';
     echo '<div class="price">','¥',$row['price'],'</div>';
     echo '</a></li>';
