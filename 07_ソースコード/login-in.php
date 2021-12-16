@@ -58,7 +58,7 @@ if(isset($_POST["login"])){
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <div class="head">
@@ -66,16 +66,18 @@ if(isset($_POST["login"])){
 </div>
 <div class="login">
 
-    <?php
-    if(isset($_POST["login"])){
-            echo '<div class="error_text">';
-            echo '電話番号/メールアドレスが違います。';
-            echo '</div>';
-    }
-    ?>
 
 <a class="login_title">ログイン</a><br>
-    <br>
+
+    <?php
+    if(isset($_POST["login"])){
+        echo '<a class="error_text">';
+        echo '電話番号/メールアドレス又はパスワードが違います。';
+        echo '</a>';
+    }else{
+        echo "<br>";
+    }
+    ?>
 
     <form action="login-in.php" method="post">
         <a class="log_text">メールアドレス又は電話番号</a><br>
