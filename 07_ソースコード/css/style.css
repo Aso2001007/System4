@@ -9,9 +9,9 @@ a {
 }
 
 div.head {
-    display: block;
+    position: absolute;
     width: 1515px;
-    height: 147px;
+    height: 100px;
     left: 0px;
     top: 0px;
 
