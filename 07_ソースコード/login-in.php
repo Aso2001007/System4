@@ -71,9 +71,9 @@ if(isset($_POST["login"])){
 
     <?php
     if(isset($_POST["login"])){
-        echo '<a class="error_text">';
+        echo '<div class="error_text">';
         echo '電話番号/メールアドレス又はパスワードが違います。';
-        echo '</a>';
+        echo '</div>';
     }else{
         echo "<br>";
     }
