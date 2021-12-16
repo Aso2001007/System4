@@ -14,7 +14,7 @@ if(isset($_POST["login"])){
     $tell_mail=$_POST['tell_mail'];
     if (preg_match('|^[0-9a-z_./?-]+@([0-9a-z]+\.)+[0-9a-z-]+$|',$tell_mail)){
 
-        $sql=$pdo->prepare('select * from system where mail=? and pass=?');
+        $sql=$pdo->prepare('select * from member where mail=? and pass=?');
         $sql->execute([$_REQUEST['tell_mail'],$_REQUEST['pass']]);
 
         foreach ($sql as $row){
@@ -32,7 +32,7 @@ if(isset($_POST["login"])){
 
     } else if (preg_match('/^[0-9]{2,4}[0-9]{2,4}[0-9]{3,4}$/',$tell_mail)){
 
-        $sql=$pdo->prepare('select * from system where tel=? and pass=?');
+        $sql=$pdo->prepare('select * from member where tel=? and pass=?');
         $sql->execute([$_REQUEST['tell_mail'],$_REQUEST['pass']]);
 
         foreach ($sql as $row){
