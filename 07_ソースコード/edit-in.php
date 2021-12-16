@@ -75,11 +75,11 @@ echo '<div class="head">';
 echo '</div>';
 
 /*会員情報*/
+echo '<a class="information_title">会員情報</a>';
 if (isset($_POST["edit"])){
-    echo '<a class="cant_edit">会員情報を更新出来ませんでした</a>';
+    echo '<p class="cant_edit">会員情報を更新出来ませんでした</p>';
 }
     
-echo '<a class="information_title">会員情報</a>';
 echo '<form action="edit-in.php" method="post">';
     echo '<div class="infor-edit">';
         echo '<div class="edit-box"><a>お名前：</a>';
