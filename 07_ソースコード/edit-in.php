@@ -76,7 +76,7 @@ echo '</div>';
 /*会員情報*/
 echo '<a class="information_title">会員情報</a>';
 if (isset($_POST["edit"])){
-    echo '<p class="cant_edit">会員情報を更新出来ませんでした</p>';
+    echo '<a class="cant_edit">会員情報を更新出来ませんでした</a>';
 }
     
 echo '<form action="edit-in.php" method="post">';
