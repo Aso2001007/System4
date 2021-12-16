@@ -54,7 +54,6 @@ if (isset($_POST["edit"])){
 <head>
     <meta charset="UTF-8">
     <title>文房具サイト</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/edit.css">
 </head>
 <body>
