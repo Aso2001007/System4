@@ -64,7 +64,7 @@ $name=$address=$tel=$mail=$password='';
 if (isset($_SESSION['member'])) {
     $name=$_SESSION['member']['name'];
     $address=$_SESSION['member']['address'];
-    $tell=$_SESSION['member']['tel'];
+    $tel=$_SESSION['member']['tel'];
     $mail=$_SESSION['member']['mail'];
     $password=$_SESSION['member']['password'];
 }
